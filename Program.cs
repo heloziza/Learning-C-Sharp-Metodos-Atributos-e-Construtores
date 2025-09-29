@@ -20,3 +20,16 @@ Console.WriteLine(porcentagem.ToString("P"));
 
 int numero = 123456;
 Console.WriteLine(numero.ToString("##-##-##"));
+
+DateTime data = DateTime.Now;
+Console.WriteLine(data);
+Console.WriteLine(data.ToString("dd/MM/yyyy"));
+Console.WriteLine(data.ToString("dd/MM/yyyy HH:mm"));
+
+DateTime dataString = DateTime.Parse("28/09/2025");
+Console.WriteLine(dataString);
+
+string stringData = "2022-04-17 18:00";
+DateTime.TryParseExact(stringData, "yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime dataConvertidaDaString);
+
+Console.WriteLine(dataConvertidaDaString);

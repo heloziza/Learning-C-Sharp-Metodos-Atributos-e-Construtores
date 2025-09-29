@@ -84,3 +84,26 @@ Formatação dos valores conforme quiser:
 int numero = 123456;
 Console.WriteLine(numero.ToString("##-##-##"));
 Resultado: 12-34-56
+
+DateTime data = DateTime.Now;
+cuidado quando usar isso em nuvem pois irá pegar essa informação de lá
+
+Data é muito importante principalmente quando mexemos também com banco de dados
+Console.WriteLine(data.ToString("dd/MM/yyyy"));
+MM é de mês
+mm é de minutos
+
+Console.WriteLine(data.ToString("dd/MM/yyyy HH:mm"));
+HH é de horas contando até 24
+hh é de horas contando até 12
+DateTime é muito bom pois pode formatar do jeito que mais atende ao seu problema
+.ToString() → mostra tudo (data e hora).
+.ToShortDateString() → mostra só a data.
+.ToShortTimeString() → mostra só a hora.
+
+Transformação de string em data sem parar o sistema caso não seja possível converter:
+
+string stringData = "2022-04-17 18:00";
+DateTime.TryParseExact(stringData, "yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime dataConvertidaDaString);
+
+Console.WriteLine(dataConvertidaDaString);
