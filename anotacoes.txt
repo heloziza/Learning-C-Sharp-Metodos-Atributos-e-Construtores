@@ -1,0 +1,33 @@
+Atributos na classe pessoa seriam o nome e a idade
+
+já apresentar seria um método
+
+ecapsulamento é proteger os nossos atributos de modificações externas, a não ser que ela passe por validações seja de propriedades ou de métodos
+
+quando é uma validação muito simples é preferível que faça:
+get => _nome.ToUpper();
+que é uma body expression
+
+public todo mundo pode acessar
+private só a própria classe pode acessar e alterar
+
+um campo não terá get e set
+propriedade vão ter get e/ou set
+
+propriedade só de get:
+public string NomeCompleto => $"{Nome} {Sobrenome}";
+com body expression
+
+public void AdicionarAluno(Pessoa aluno)
+{
+    Alunos.Add(aluno);
+}
+método que recebe um Objeto, void pois não retorna nada
+
+método com retorno:
+public int ObterQuantidadeAlunosMatriculados()
+{
+    int quantidade = Alunos.Count;
+    return quantidade;
+}
+
