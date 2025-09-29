@@ -31,3 +31,56 @@ public int ObterQuantidadeAlunosMatriculados()
     return quantidade;
 }
 
+Usando construtores a criação de um objeto fica bem mais fácil:
+Pessoa p1 = new Pessoa("Helo", "Giacometti", 20);
+Pessoa p2 = new Pessoa("Leonardo", "Buta", 23);
+
+Para ficar mais claro pra quem lê dá para deixar:
+Pessoa p1 = new Pessoa(nome: "Helo", sobrenome: "Giacometti", idade: 20);
+Pessoa p2 = new Pessoa(nome: "Leonardo", sobrenome: "Buta", idade: 23);
+
+Concatenação: string texto = "Nº " + count + " - " + Alunos[count].NomeCompleto;
+
+Interpolação: string texto = $"Nº  {count} - {Alunos[count].NomeCompleto}";
+para interpolação precisa do símbolo de dólar antes das aspas duplas, deixa mais clara manipulação de texto, mais fácil de visualizar
+
+Concatenação de strings com "+":
+string texto1 = "10";
+string texto2 = "20";
+string texto3 = texto1 + texto2;
+texto3 vai ser igual a "1020"
+se quiser a soma de fato tem que converter para inteiro
+
+string texto1 = "10";
+int texto2 = 20;
+string texto3 = texto1 + texto2;
+quando tem uma string e um inteiro, e a string aparece primeiro
+ele faz um casting implícito onde o int vira string
+tem sinal de + e tem uma string, tudo vai virar string
+
+
+Formatação de valores monetários 
+decimal valorMonetario = 82.40M;
+Console.WriteLine($"{valorMonetario:C}");
+O "C" significa currency daí ele formata conforme a nossa moeda
+Ele pega essa informação da configuração do seu sistema
+Se utilizar em uma nuvem vai ser dólar ou de onde está a nuvem
+Se eu quiser mudar a cultura e deixar ela para todo o sistema basta fazer o seguinte código:
+CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-US");
+Mesmo que a minha esteja em pt-BR consigo formatar diferente na hora de formatar:
+Console.WriteLine(valorMonetario.ToString("C", CultureInfo.CreateSpecificCulture("en-US")));
+
+Console.WriteLine(valorMonetario.ToString("C8"));
+-> mostra a moeda de acordo com a culture encontrada + 8 casas decimais
+
+Console.WriteLine(valorMonetario.ToString("N8"));
+-> não mostra a moeda de acordo com a culture encontrada mas mostra as 8 casas decimais
+
+Formatação para porcentagem:
+double porcentagem = .3421;
+Console.WriteLine(porcentagem.ToString("P"));
+
+Formatação dos valores conforme quiser:
+int numero = 123456;
+Console.WriteLine(numero.ToString("##-##-##"));
+Resultado: 12-34-56

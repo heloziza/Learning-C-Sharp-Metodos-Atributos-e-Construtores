@@ -12,3 +12,4 @@ C:\Users\helog\OneDrive\Área de Trabalho\ExemploExplorando\obj\Debug\net9.0\ref
 C:\Users\helog\OneDrive\Área de Trabalho\ExemploExplorando\obj\Debug\net9.0\ExemploExplorando.pdb
 C:\Users\helog\OneDrive\Área de Trabalho\ExemploExplorando\obj\Debug\net9.0\ExemploExplorando.genruntimeconfig.cache
 C:\Users\helog\OneDrive\Área de Trabalho\ExemploExplorando\obj\Debug\net9.0\ref\ExemploExplorando.dll
+C:\Users\helog\OneDrive\Área de Trabalho\ExemploExplorando\obj\Debug\net9.0\ExemploExplorando.sourcelink.json
