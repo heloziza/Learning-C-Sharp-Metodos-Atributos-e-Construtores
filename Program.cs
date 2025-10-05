@@ -1,12 +1,18 @@
 ﻿using System.Globalization;
 using ExemploExplorando.Models;
 
+//IF ternário: --------------------------------------------------------------------------------
+int numero = 10;
+bool ehPar = numero % 2 == 0;
+Console.WriteLine($"O número {numero} é " + (ehPar ? "par" : "ímpar"));
+
+
 //Desconstrutor: --------------------------------------------------------------------------------
 
-Pessoa p1 = new Pessoa("Leonardo", "Buta", 23);
+// Pessoa p1 = new Pessoa("Leonardo", "Buta", 23);
 
-(string nome, string sobrenome) = p1;
-Console.WriteLine($"{nome} {sobrenome}");
+// (string nome, string sobrenome) = p1;
+// Console.WriteLine($"{nome} {sobrenome}");
 
 //Return de método com tupla: --------------------------------------------------------------------------------
 

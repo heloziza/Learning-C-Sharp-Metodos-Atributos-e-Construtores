@@ -195,3 +195,8 @@ Pessoa p1 = new Pessoa("Leonardo", "Buta", 23);
 
 (string nome, string sobrenome) = p1;
 Console.WriteLine($"{nome} {sobrenome}");
+
+O if ternário serve para deixar o código menos verboso, só serve para IFs de if e else, não pode ter um else if, podemos estar fazendo da seguinte forma:
+int numero = 10;
+bool ehPar = numero % 2 == 0;
+Console.WriteLine($"O número {numero} é " + (ehPar ? "par" : "ímpar"));
