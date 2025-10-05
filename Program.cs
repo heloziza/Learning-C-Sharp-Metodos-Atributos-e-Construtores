@@ -1,39 +1,42 @@
 ﻿using System.Globalization;
 using ExemploExplorando.Models;
 
-Dictionary<string, string> estados = new Dictionary<string, string>();
+//Dicionário: --------------------------------------------------------------------------------
+// Dictionary<string, string> estados = new Dictionary<string, string>();
 
-estados.Add("SP", "São Paulo");
-estados.Add("BA", "Bahia");
-estados.Add("MG", "Minas Gerais");
+// estados.Add("SP", "São Paulo");
+// estados.Add("BA", "Bahia");
+// estados.Add("MG", "Minas Gerais");
 
-Console.WriteLine(estados["MG"]);
+// Console.WriteLine(estados["MG"]);
 
-foreach (var item in estados)
-{
-    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
-}
+// foreach (var item in estados)
+// {
+//     Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+// }
 
-estados.Remove("BA");
-estados["SP"] = "São Paulo - valor alterado";
+// estados.Remove("BA");
+// estados["SP"] = "São Paulo - valor alterado";
 
-foreach (var item in estados)
-{
-    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
-}
+// foreach (var item in estados)
+// {
+//     Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+// }
 
-string chave = "BA";
-Console.WriteLine($"Verificando o elemento: {chave}");
+// string chave = "BA";
+// Console.WriteLine($"Verificando o elemento: {chave}");
 
-if (estados.ContainsKey(chave))
-{
-    Console.WriteLine($"Valor existente: {chave}");
-}
-else
-{
-    Console.WriteLine($"Valor inexistente. É seguro adicionar: {chave}");
-}
+// if (estados.ContainsKey(chave))
+// {
+//     Console.WriteLine($"Valor existente: {chave}");
+// }
+// else
+// {
+//     Console.WriteLine($"Valor inexistente. É seguro adicionar: {chave}");
+// }
 
+
+//Pilha: --------------------------------------------------------------------------------
 // Stack<int> pilha = new Stack<int>();
 
 // pilha.Push(4);
@@ -53,6 +56,8 @@ else
 //     Console.WriteLine(item);
 // }
 
+
+//Fila: --------------------------------------------------------------------------------
 // Queue<int> fila = new Queue<int>();
 
 // fila.Enqueue(2);
@@ -72,6 +77,8 @@ else
 //     Console.WriteLine(item);
 // }
 
+
+//Exceção: --------------------------------------------------------------------------------
 // new ExemploExcecao().Metodo1();
 
 
@@ -109,7 +116,7 @@ else
 
 
 
-
+//List e formatações de data e valores monetários: --------------------------------------------------------------------------------
 
 
 // Pessoa p1 = new Pessoa(nome: "Helo", sobrenome: "Giacometti", idade: 20);
