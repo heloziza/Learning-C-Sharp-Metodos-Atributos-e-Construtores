@@ -130,3 +130,15 @@ public void Metodo1()
         }
 a exceção não é tratada, então o programa é encerrado, vai voltando até tentar encontrar o try catch
 Se não encontra, mostra o rastro que ele fez até encontrar o erro
+
+Para criar uma fila:
+Queue<int> fila = new Queue<int>();
+
+Para inserir na fila:
+fila.Enqueue(2);
+fila.Enqueue(4);
+fila.Enqueue(6);
+fila.Enqueue(8);
+
+Para remover o item da fila seguindo FIFO:
+fila.Dequeue();
