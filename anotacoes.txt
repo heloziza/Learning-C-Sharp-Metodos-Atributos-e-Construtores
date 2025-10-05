@@ -183,3 +183,9 @@ Para uma tupla a criação mais recomendada é a seguinte:
 (int Id, string Nome, string Sobrenome, decimal Altura) tupla = (1, "Leonardo", "Buta", 1.80M);
 
 pela legibilidade do código, mas existem outros modos, mas tem que usar o Item1, Item2... para referenciar que são menos claros
+
+para retorno de método usando tupla, podemos fazer:
+var (sucesso, linhasArquivo, quantidadeLinhas) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
+
+caso tenha alguma variável que é retornada mas não usada, podemos fazer:
+var (sucesso, linhasArquivo, _) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
