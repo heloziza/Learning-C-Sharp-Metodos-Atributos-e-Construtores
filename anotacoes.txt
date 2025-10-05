@@ -154,3 +154,27 @@ pilha.Push(10);
 
 Para remover o item da pilha seguindo LIFO:
 pilha.Dequeue();
+
+Dicionário:
+Dictionary<string, string> estados = new Dictionary<string, string>();
+Contém uma chave e um conteúdo
+
+estados.Add("SP", "São Paulo");
+estados.Add("BA", "Bahia");
+estados.Add("MG", "Minas Gerais");
+
+Existe o key e o value:
+foreach (var item in estados)
+{
+    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+}
+
+Para remover pela chave:
+estados.Remove("BA");
+
+Para alterar conteúdo de chave:
+estados["SP"] = "São Paulo - valor alterado";
+
+Para verificar se já existe uma chave com aquela escrita:
+string chave = "BA";
+if (estados.ContainsKey(chave)){}
