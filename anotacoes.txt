@@ -189,3 +189,9 @@ var (sucesso, linhasArquivo, quantidadeLinhas) = arquivo.LerArquivo("Arquivos/ar
 
 caso tenha alguma variável que é retornada mas não usada, podemos fazer:
 var (sucesso, linhasArquivo, _) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
+
+Um desconstrutor serve para desempacotar dados de um objeto e torná-los acessíveis de forma direta, simplificando o código e permitindo mapear um objeto para uma tupla, podemos fazer isso da seguinte maneira:
+Pessoa p1 = new Pessoa("Leonardo", "Buta", 23);
+
+(string nome, string sobrenome) = p1;
+Console.WriteLine($"{nome} {sobrenome}");

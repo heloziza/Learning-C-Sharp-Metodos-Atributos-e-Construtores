@@ -16,8 +16,24 @@ namespace ExemploExplorando.Models
             Sobrenome = sobrenome;
             Idade = idade;
         }
+
+        public Pessoa(string v1, string v2)
+        {
+            this.v1 = v1;
+            this.v2 = v2;
+        }
+
+        public void Deconstruct(out string nome, out string sobrenome)
+        {
+            nome = Nome;
+            sobrenome = Sobrenome;
+        }
+
         private string _nome;
         private int _idade;
+        private string v1;
+        private string v2;
+
         public string Nome
         {
             get => _nome.ToUpper();

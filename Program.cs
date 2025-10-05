@@ -1,24 +1,31 @@
 ﻿using System.Globalization;
 using ExemploExplorando.Models;
 
+//Desconstrutor: --------------------------------------------------------------------------------
+
+Pessoa p1 = new Pessoa("Leonardo", "Buta", 23);
+
+(string nome, string sobrenome) = p1;
+Console.WriteLine($"{nome} {sobrenome}");
+
 //Return de método com tupla: --------------------------------------------------------------------------------
 
-LeituraArquivo arquivo = new LeituraArquivo();
+// LeituraArquivo arquivo = new LeituraArquivo();
 
-var (sucesso, linhasArquivo, quantidadeLinhas) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
+// var (sucesso, linhasArquivo, quantidadeLinhas) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
 
-if (sucesso)
-{
-    Console.WriteLine($"Quantidade linhas do arquivo: {quantidadeLinhas}");
+// if (sucesso)
+// {
+//     Console.WriteLine($"Quantidade linhas do arquivo: {quantidadeLinhas}");
 
-    foreach (string linha in linhasArquivo)
-    {
-        Console.WriteLine(linha);
-    }
-}
-else {
-    Console.WriteLine("Não foi possível ler o arquivo");
-}
+//     foreach (string linha in linhasArquivo)
+//     {
+//         Console.WriteLine(linha);
+//     }
+// }
+// else {
+//     Console.WriteLine("Não foi possível ler o arquivo");
+// }
 
 //Tupla: --------------------------------------------------------------------------------
 // (int Id, string Nome, string Sobrenome, decimal Altura) tupla = (1, "Leonardo", "Buta", 1.80M);
