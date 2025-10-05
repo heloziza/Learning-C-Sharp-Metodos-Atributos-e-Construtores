@@ -107,3 +107,26 @@ string stringData = "2022-04-17 18:00";
 DateTime.TryParseExact(stringData, "yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime dataConvertidaDaString);
 
 Console.WriteLine(dataConvertidaDaString);
+
+Quando ocorre uma exceção, a execução interrompe e o controle é dado ao manipulador de exceção apropriado. Isso geralmente significa que as linhas de código que você espera que sejam executadas são ignoradas. Alguma limpeza de recursos, como fechar um arquivo, precisa ser feita mesmo se uma exceção for gerada. Para fazer isso, você pode usar um finally bloco. Um finally bloco sempre é executado, independentemente de uma exceção ser gerada.
+
+
+No exemplo:
+public void Metodo1()
+        {
+            Metodo2();
+        }
+        public void Metodo2()
+        {
+            Metodo3();
+        }
+        public void Metodo3()
+        {
+            Metodo4();
+        }
+        public void Metodo4()
+        {
+            throw new Exception("Ocorreu ma exceção");
+        }
+a exceção não é tratada, então o programa é encerrado, vai voltando até tentar encontrar o try catch
+Se não encontra, mostra o rastro que ele fez até encontrar o erro
