@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\helog\\OneDrive\\Área de Trabalho\\ExemploExplorando\\ExemploExplorando.csproj": {}
+    "c:\\Users\\helog\\OneDrive\\Área de Trabalho\\ExemploExplorando\\ExemploExplorando.csproj": {}
   },
   "projects": {
-    "C:\\Users\\helog\\OneDrive\\Área de Trabalho\\ExemploExplorando\\ExemploExplorando.csproj": {
+    "c:\\Users\\helog\\OneDrive\\Área de Trabalho\\ExemploExplorando\\ExemploExplorando.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\helog\\OneDrive\\Área de Trabalho\\ExemploExplorando\\ExemploExplorando.csproj",
+        "projectUniqueName": "c:\\Users\\helog\\OneDrive\\Área de Trabalho\\ExemploExplorando\\ExemploExplorando.csproj",
         "projectName": "ExemploExplorando",
-        "projectPath": "C:\\Users\\helog\\OneDrive\\Área de Trabalho\\ExemploExplorando\\ExemploExplorando.csproj",
+        "projectPath": "c:\\Users\\helog\\OneDrive\\Área de Trabalho\\ExemploExplorando\\ExemploExplorando.csproj",
         "packagesPath": "C:\\Users\\helog\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\helog\\OneDrive\\Área de Trabalho\\ExemploExplorando\\obj\\",
+        "outputPath": "c:\\Users\\helog\\OneDrive\\Área de Trabalho\\ExemploExplorando\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\helog\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -43,6 +43,12 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

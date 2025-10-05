@@ -200,3 +200,9 @@ O if ternário serve para deixar o código menos verboso, só serve para IFs de 
 int numero = 10;
 bool ehPar = numero % 2 == 0;
 Console.WriteLine($"O número {numero} é " + (ehPar ? "par" : "ímpar"));
+
+Um pacote é um conjunto de código úteis que possibilita o compartilhamento e reuso de código
+
+Nuget é um gerenciador de pacotes
+
+Serialização consiste em transformar objetos em fluxos de bytes para seu armazenamento e transmissão
