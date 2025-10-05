@@ -178,3 +178,8 @@ estados["SP"] = "São Paulo - valor alterado";
 Para verificar se já existe uma chave com aquela escrita:
 string chave = "BA";
 if (estados.ContainsKey(chave)){}
+
+Para uma tupla a criação mais recomendada é a seguinte:
+(int Id, string Nome, string Sobrenome, decimal Altura) tupla = (1, "Leonardo", "Buta", 1.80M);
+
+pela legibilidade do código, mas existem outros modos, mas tem que usar o Item1, Item2... para referenciar que são menos claros
