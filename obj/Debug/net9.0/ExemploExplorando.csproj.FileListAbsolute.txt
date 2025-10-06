@@ -13,3 +13,6 @@ C:\Users\helog\OneDrive\Área de Trabalho\ExemploExplorando\obj\Debug\net9.0\Exe
 C:\Users\helog\OneDrive\Área de Trabalho\ExemploExplorando\obj\Debug\net9.0\ExemploExplorando.genruntimeconfig.cache
 C:\Users\helog\OneDrive\Área de Trabalho\ExemploExplorando\obj\Debug\net9.0\ref\ExemploExplorando.dll
 C:\Users\helog\OneDrive\Área de Trabalho\ExemploExplorando\obj\Debug\net9.0\ExemploExplorando.sourcelink.json
+C:\Users\helog\OneDrive\Área de Trabalho\ExemploExplorando\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Users\helog\OneDrive\Área de Trabalho\ExemploExplorando\obj\Debug\net9.0\ExemploExplorando.csproj.AssemblyReference.cache
+C:\Users\helog\OneDrive\Área de Trabalho\ExemploExplorando\obj\Debug\net9.0\ExemploE.B7F01285.Up2Date

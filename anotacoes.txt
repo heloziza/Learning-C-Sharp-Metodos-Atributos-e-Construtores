@@ -206,3 +206,5 @@ Um pacote é um conjunto de código úteis que possibilita o compartilhamento e 
 Nuget é um gerenciador de pacotes
 
 Serialização consiste em transformar objetos em fluxos de bytes para seu armazenamento e transmissão
+
+Todo pacote tem uma documentação que ensina como usar o pacote

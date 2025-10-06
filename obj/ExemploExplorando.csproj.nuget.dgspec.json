@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\helog\\OneDrive\\Área de Trabalho\\ExemploExplorando\\ExemploExplorando.csproj": {}
+    "C:\\Users\\helog\\OneDrive\\Área de Trabalho\\ExemploExplorando\\ExemploExplorando.csproj": {}
   },
   "projects": {
-    "c:\\Users\\helog\\OneDrive\\Área de Trabalho\\ExemploExplorando\\ExemploExplorando.csproj": {
+    "C:\\Users\\helog\\OneDrive\\Área de Trabalho\\ExemploExplorando\\ExemploExplorando.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\helog\\OneDrive\\Área de Trabalho\\ExemploExplorando\\ExemploExplorando.csproj",
+        "projectUniqueName": "C:\\Users\\helog\\OneDrive\\Área de Trabalho\\ExemploExplorando\\ExemploExplorando.csproj",
         "projectName": "ExemploExplorando",
-        "projectPath": "c:\\Users\\helog\\OneDrive\\Área de Trabalho\\ExemploExplorando\\ExemploExplorando.csproj",
+        "projectPath": "C:\\Users\\helog\\OneDrive\\Área de Trabalho\\ExemploExplorando\\ExemploExplorando.csproj",
         "packagesPath": "C:\\Users\\helog\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\helog\\OneDrive\\Área de Trabalho\\ExemploExplorando\\obj\\",
+        "outputPath": "C:\\Users\\helog\\OneDrive\\Área de Trabalho\\ExemploExplorando\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\helog\\AppData\\Roaming\\NuGet\\NuGet.Config"

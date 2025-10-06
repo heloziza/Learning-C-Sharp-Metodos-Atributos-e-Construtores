@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3TsAOa3igGQ=",
+  "dgSpecHash": "vWWKLkecFvE=",
   "success": true,
-  "projectFilePath": "c:\\Users\\helog\\OneDrive\\Área de Trabalho\\ExemploExplorando\\ExemploExplorando.csproj",
+  "projectFilePath": "C:\\Users\\helog\\OneDrive\\Área de Trabalho\\ExemploExplorando\\ExemploExplorando.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\helog\\.nuget\\packages\\newtonsoft.json\\13.0.4\\newtonsoft.json.13.0.4.nupkg.sha512"
   ],
