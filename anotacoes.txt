@@ -208,3 +208,25 @@ Nuget é um gerenciador de pacotes
 Serialização consiste em transformar objetos em fluxos de bytes para seu armazenamento e transmissão
 
 Todo pacote tem uma documentação que ensina como usar o pacote
+
+Para serializar nossos objetos podemos criar uma lista, inserir os objetos nela e serializar a lista usando o pacote baixado: JsonConvert.SerializeObject(listaVendas, Formatting.Indented);
+List<Venda> listaVendas = new List<Venda>();
+
+Venda v1 = new Venda(1, "Material de escritório", 25.00M, dataAtual);
+Venda v2 = new Venda(2, "Material de farmácia", 105.00M, dataAtual);
+listaVendas.Add(v1);
+listaVendas.Add(v2);
+
+string serializado = JsonConvert.SerializeObject(listaVendas, Formatting.Indented);
+
+Como ler um arquivo: string conteudoArquivo = File.ReadAllText("Arquivos/vendas.json");
+
+Como escrever em um arquivo: File.WriteAllText("Arquivos/vendas.json", serializado);
+
+Já para deserializar podemos ler um arquivo json e fazer a deserialização usando o pacote instalado:
+string conteudoArquivo = File.ReadAllText("Arquivos/vendas.json");
+Converter o Json que foi lido em uma lista de objetos: List<Venda> listaVenda = JsonConvert.DeserializeObject<List<Venda>>(conteudoArquivo);
+
+Quando o cliente manda algo diferente do que esperamos, por exemplo Nome_Produto ao invés de Produto podemos atribuir metadados para as classes e propriedades, passando valores ou alterando seu comportamento, isso é conhecido como atributos:
+[JsonProperty("Nome_Produto")]
+public string Produto { get; set; }
